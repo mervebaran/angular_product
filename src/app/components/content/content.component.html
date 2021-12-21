@@ -1,0 +1,186 @@
+
+     <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-5" *ngFor="let item of mainProducts">
+                <img src="{{item.prodImage}}" alt="image/png" class="img-thumbnail thubnail-settings">
+            </div>
+            <div class="col-md-7 price-div" *ngFor="let item of mainProducts">
+                <h3>{{item.name}}</h3>
+                <p class="text-danger">${{item.disPrice}} <s >${{item.price}}</s></p>               
+                <p>    
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span>{{item.revives}} revives</span>  
+                </p>
+                <p>{{item.summary}}</p>
+                <p><b>SKU: <samp class="text-danger">{{item.sku}}</samp> </b></p>
+                <p><b>Availability: <samp class="boldtext">{{item.availability}}</samp> </b></p>
+                <p><b>Categori: <samp class="boldtext">{{item.categori}}</samp> </b></p>
+                <p><b>Tag: <samp class="boldtext">{{item.tag}}</samp> </b></p>
+                    <div class="form-outline">
+                        <input placeholder="1"  type="number" id="typeNumber" class="form-control" autohover />
+                        <label class="form-label" for="typeNumber"></label>
+                        <button type="button" class="text-white btn btn-sm btnbtn" ><b>Add to Cart</b></button>
+                    </div>
+                    <div class="share-icons">
+                            <ul>
+                                <li class="lisecondc text-black"><b>Share: </b></li>
+                                <li class="lisecondc share-icon-s"><i class="fa fa-facebook share-face"><a href="{{item.share.facebook}}" title="facebook sayfamız" target="_blank"></a></i></li>
+                                <li class="lisecondc share-icon-s"><i class="fa fa-twitter share-twitter"><a href="{{item.share.twitter}}"  title="twitter" target="_blank"> </a></i></li>
+                                <li class="lisecondc share-icon-s"><i class="fa fa-instagram share-insta"><a href="{{item.share.instagram}}"  title="instegramdan bizi takip edin" target="_blank"> </a></i></li>
+                                <li class="lisecondc share-icon-s"><i class="fa fa-linkedin share-link"><a href="{{item.share.linkedin}}"  title="link edin" target="_blank"> </a></i></li>
+                            </ul>
+                    </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="container mt-5 desc-div" *ngFor="let item of mainProducts">
+        <div class="row" >
+          <div class="btn-group description" >
+          <button class="btn btn-primary btn-sm desc2" (click)="selectButton(2)" [ngClass]="{ 'desActive': selected === 2}"
+           id="defaultOpen" onclick="openPage('Contact', this)">Description</button>
+          <button class="btn btn-primary btn-sm desc3" (click)="selectButton(3)" [ngClass]="{ 'desActive': selected === 3}"       
+          onclick="openPage('About', this)">Reveiwes({{item.revives}})</button>
+        </div>
+          <hr>
+          <div id="Contact" class="tabcontent tabcolor1" style="display: block;">
+            
+              <p>{{item.description.desSummary}}</p>
+              <ul class="desc-content" >
+                <li>{{item.description.desList.lineOne}}</li>
+                <li >{{item.description.desList.lineTwo}}</li>
+                <li >{{item.description.desList.lineTree}}</li>
+                <li>{{item.description.desList.lineFour}}</li>
+                <li>{{item.description.desList.lineFive}}</li>
+                <li>{{item.description.desList.lineSix}}</li>
+              </ul>
+          </div>
+          
+          
+          <div id="About" class="tabcontent tabcolor2">
+            <div class="ratingAvarage">
+              <h3>Product Rating</h3>
+              <div class="rating">
+                <p>    
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+              </p>
+              </div>
+              <div class="rating-counter"><span>4.1 avarage based on {{item.revives}} revives</span></div>
+            </div>
+            <div class="comments-section">
+              <h3>{{item.revives}} Reviwes <br/></h3>
+              <div class="commentRev container-fluid"  *ngFor="let item of comment">
+                <div class="row">
+                <div class="col-md-2">
+                <img class="comsubImg" src="{{item.img}}" alt="image/jpg">
+              </div>
+              <div class="col-md-10 relativeSet">  
+              <div class="comsubStar">
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </p>
+                </div>
+                <span class="comsubName"><b>{{item.name}}</b></span>
+                <p class="comsubRev">{{item.revive}}</p>
+              </div>
+            </div>
+
+            </div>
+            </div>
+            <div class="commentSec">
+              <h3>Add a review</h3>
+              <p>Your email address will not be published. Required fields are marked<span> *</span></p>
+              <form [formGroup]="contentForm" (ngSubmit)="createBlock()">
+                <div class="row">
+                  <div class="col-md-12"><span *ngFor="let star of stars; let i = index" (click)="rate(i + 1)">
+                    <ng-container *ngIf="star; else noStar"><span class="fa fa-star checked"></span></ng-container>
+                    <ng-template #noStar><span class="fa fa-star unchecked"></span></ng-template>
+                  </span>
+                  </div>
+                  <div class="col-md-6"><input type="text" placeholder="Name *" name="title" formControlName="title" /></div>
+                  <div class="col-md-6"><input  type="text" placeholder="Email *" /></div>
+                  <div class="col-md-12"><textarea name="" id="" cols="30" rows="10" placeholder="Your review"></textarea></div>
+                  <div class="col-md-12"><input class="chackboxSet" type="checkbox">
+                  <label class="labelSet" for="test1">Save my name, email, and we bsite in this browser for the next time I comment.</label></div>
+                  <div class="col-md-12"><button type="button" class="text-white btn btn-md submitBtn">Submit</button></div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+    </div>
+      
+      <div class="container mt-5 text-center relatedproducts">
+        <div class="row">
+          
+              <span class="text-danger prodspan">PRODUCTS</span>
+              <h2 style="font-size:36px; font-weight:700">Related Products</h2>
+          
+        </div>
+    </div>
+
+      <div class="container mt-5 relatedproducts-bar">
+        <div class="row">
+
+         
+
+          <div class="col-sm-4 saletag-div" *ngFor="let item of products">
+            <div class="img-zoom"><img src="{{item.prodImage}}" alt=""class="img-thumbnail thubnail-settings" ></div>
+            <div class="saletagimage" *ngIf="let item of products.saleTag">Sale!</div>
+            <h5 class="mt-2">{{item.name}}</h5>
+            <p class="text-dark"><s>${{item.price}}</s> ${{item.disPrice}} </p>
+          </div>
+
+        </div>
+      </div>
+
+        <div class="container mt-5 addband p-5 text-white appdow-div">
+          <div class="row" style="padding:45px;">
+            <div class="col-sm-6 appcontent" >
+                <h5 class="mt-2">DOWNLOAD APP</h5>
+                <h1 class="mt-2">Let's Get Your Free Copy From Apple and Play Store</h1>
+                <p class="mt-2">Instant free download from store Cloud based storage for your data backup just 
+                    log in with your mail account from play store and using whatever you want for 
+                    your business purpose orem ipsum dummy text.</p>
+                <div class="playbtn">
+                    <div class="playstore">
+                        <div class="imagediv">
+                            <img src="assets/images/play-store.png" alt="">
+                            </div>
+                            <div class="playbtndiv">
+                            <p><span>Get It On</span><br><span class=" playtext-g">Google Play</span></p>
+                        </div>
+                    </div>
+                    <div class="playstore">
+                        <div class="imagediv">
+                        <img src="assets/images/apple-store.png" alt="">
+                        </div>
+                        <div class="playbtndiv">
+                        <p><span>Download on the</span><br><span  class="playtext-a">Apple Store</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 appdowbut">
+                <img src="assets/images/mobilephone-img.png" class="img-fluid thubnail-settings"  alt="" >
+            </div>
+          </div>
+        </div>
+      

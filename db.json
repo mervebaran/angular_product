@@ -1,0 +1,53 @@
+{
+    "comment" : [
+        {
+            "img" : "assets/images/user1.jpg",
+            "stars" : {
+                "starOne" : true,
+                "starTwo" : true,
+                "starTree" : true,
+                "starFour" : true,
+                "starFive" : true
+            },
+            "name" : "James Anderson",
+            "revive" : "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in. Very well built theme, couldn't be happier with it. Can't wait for future updates to see what."
+        },
+        {
+            "img" : "assets/images/user2.jpg",
+            "stars" : {
+                "starOne" : true,
+                "starTwo" : true,
+                "starTree" : true,
+                "starFour" : true,
+                "starFive" : true
+            },
+            "name" : "Sarah Taylor",
+            "revive" : "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it."
+        },
+        {
+            "img" : "assets/images/user3.jpg",
+            "stars" : {
+                "starOne" : true,
+                "starTwo" : true,
+                "starTree" : true,
+                "starFour" : true,
+                "starFive" : true
+            },
+            "name" : "David Warner",
+            "revive" : "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it."
+        },
+        {
+            "img" : "assets/images/user4.jpg",
+            "stars" : {
+                "starOne" : true,
+                "starTwo" : true,
+                "starTree" : true,
+                "starFour" : true,
+                "starFive" : true
+            },
+            "name" : "King Kong",
+            "revive" : "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it."
+        }
+
+    ]
+}

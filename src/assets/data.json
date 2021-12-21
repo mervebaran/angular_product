@@ -1,0 +1,130 @@
+{
+    "products":
+    [
+        {
+            "sku" : 15,
+            "name" : "Laptop Blue Background",
+            "saleTag" : "false",
+            "prodImage" : "assets/images/products-img1.jpg",
+            "price" : 321,
+            "disPrice" : 250,
+            "revives" : 3,
+            "summary" : "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only",
+            "availability" : "In Stock",
+            "categori" : "Music",
+            "tag" : "Headphones",
+            "share" : {
+                "facebook" : "linkf",
+                "twitter" : "linkt",
+                "instagram" : "linki",
+                "linkedin" : "linklink"
+            },
+            "description" : {
+                "desSummary" : "This story, dazzling in its powwertul simplicity and scul-stiring wisdom, is about an Andalusian shepher d boy natmed Santingo travels from bis homeland in Spalh to the Egyptiar desert search of a treasure burned near the Pyramids. Lorem ipsm dolor sit. Very well butt themeeou id happy with it Can't wait for future updates to see what",
+                "desList" : {
+                    "lineOne" : "Instant Apzel bestseller",
+                    "lineTwo" : "Translated into 18 languages",
+                    "lineTree" : "Most Recommended Book of the year.",
+                    "lineFour" : "A neglected project, widely dismissed, its champion written off as unhinged",
+                    "lineFive" : "Yields a negative result in an experiment because of a flaw in the design of the experiment",
+                    "lineSix" : "An Amazon, Bloomberg, Financial Times, Forbes, Inc., Newsweek, Strategy + Business, Teech Crunch, Washinton Post Best Business Book oof the year"
+                }
+            }
+        },
+        {
+            "sku" : 12,
+            "name" : "Pink Smartwatch",
+            "saleTag" : "true",
+            "prodImage" : "assets/images/products-img2.jpg",
+            "price" : 321,
+            "disPrice" : 250,
+            "revives" : 3,
+            "summary" : "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only",
+            "availability" : "In Stock",
+            "categori" : "Music",
+            "tag" : "Headphones",
+            "share" : {
+                "facebook" : "linkf",
+                "twitter" : "linkt",
+                "instagram" : "linki",
+                "linkedin" : "linklink"
+            },
+            "description" : {
+                "desSummary" : "This story, dazzling in its powwertul simplicity and scul-stiring wisdom, is about an Andalusian shepher d boy natmed Santingo travels from bis homeland in Spalh to the Egyptiar desert search of a treasure burned near the Pyramids. Lorem ipsm dolor sit. Very well butt themeeou id happy with it Can't wait for future updates to see what",
+                "desList" : {
+                    "lineOne" : "Instant Apzel bestseller",
+                    "lineTwo" : "Translated into 18 languages",
+                    "lineTree" : "Most Recommended Book of the year.",
+                    "lineFour" : "A neglected project, widely dismissed, its champion written off as unhinged",
+                    "lineFive" : "Yields a negative result in an experiment because of a flaw in the design of the experiment",
+                    "lineSix" : "An Amazon, Bloomberg, Financial Times, Forbes, Inc., Newsweek, Strategy + Business, Teech Crunch, Washinton Post Best Business Book oof the year"
+                }
+            }
+        },        
+        {
+            "sku" : 11,
+            "name" : "Black Headphone",
+            "saleTag" : "false",
+            "prodImage" : "assets/images/products-img3.jpg",
+            "price" : 321,
+            "disPrice" : 250,
+            "revives" : 3,
+            "summary" : "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only",
+            "availability" : "In Stock",
+            "categori" : "Music",
+            "tag" : "Headphones",
+            "share" : {
+                "facebook" : "linkf",
+                "twitter" : "linkt",
+                "instagram" : "linki",
+                "linkedin" : "linklink"
+            },
+            "description" : {
+                "desSummary" : "This story, dazzling in its powwertul simplicity and scul-stiring wisdom, is about an Andalusian shepher d boy natmed Santingo travels from bis homeland in Spalh to the Egyptiar desert search of a treasure burned near the Pyramids. Lorem ipsm dolor sit. Very well butt themeeou id happy with it Can't wait for future updates to see what",
+                "desList" : {
+                    "lineOne" : "Instant Apzel bestseller",
+                    "lineTwo" : "Translated into 18 languages",
+                    "lineTree" : "Most Recommended Book of the year.",
+                    "lineFour" : "A neglected project, widely dismissed, its champion written off as unhinged",
+                    "lineFive" : "Yields a negative result in an experiment because of a flaw in the design of the experiment",
+                    "lineSix" : "An Amazon, Bloomberg, Financial Times, Forbes, Inc., Newsweek, Strategy + Business, Teech Crunch, Washinton Post Best Business Book oof the year"
+                }
+            }
+        }
+    ],
+    "mainProducts" : 
+    [
+        {
+            "sku" : 10,
+            "name" : "Laptop Blue Background",
+            "saleTag" : "false",
+            "prodImage" : "assets/images/MOCKUPLaptop.png",
+            "price" : 321,
+            "disPrice" : 250,
+            "revives" : 3,
+            "summary" : "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only",
+            "availability" : "In Stock",
+            "categori" : "Music",
+            "tag" : "Headphones",
+            "share" : {
+                "facebook" : "linkf",
+                "twitter" : "linkt",
+                "instagram" : "linki",
+                "linkedin" : "linklink"
+            },
+            "description" : {
+                "desSummary" : "This story, dazzling in its powwertul simplicity and scul-stiring wisdom, is about an Andalusian shepher d boy natmed Santingo travels from bis homeland in Spalh to the Egyptiar desert search of a treasure burned near the Pyramids. Lorem ipsm dolor sit. Very well butt themeeou id happy with it Can't wait for future updates to see what",
+                "desList" : {
+                    "lineOne" : "Instant Apzel bestseller",
+                    "lineTwo" : "Translated into 18 languages",
+                    "lineTree" : "Most Recommended Book of the year.",
+                    "lineFour" : "A neglected project, widely dismissed, its champion written off as unhinged",
+                    "lineFive" : "Yields a negative result in an experiment because of a flaw in the design of the experiment",
+                    "lineSix" : "An Amazon, Bloomberg, Financial Times, Forbes, Inc., Newsweek, Strategy + Business, Teech Crunch, Washinton Post Best Business Book oof the year"
+                }
+            }
+        }
+    ]
+
+
+}
