@@ -5,21 +5,18 @@ import commentsRev from 'src/assets/comments.json';
 import { IProduct } from './content.interface';
 import { showRunner } from './content.interface';
 import { CommentRev } from './content.interface';
-import { ContentService } from './content.service';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css'],
-  providers: [ContentService]
+  styleUrls: ['./content.component.css']
 })
 
 export class ContentComponent implements OnInit {
 
-  constructor(private contentService : ContentService,
-    private router : Router ) {
+  constructor() {
     this.selected = 2;
 
    }
@@ -31,30 +28,6 @@ export class ContentComponent implements OnInit {
 
   }
 
-  contentForm = new FormGroup({
-    img : new FormControl ("",[Validators.required]),
-    stars : new FormControl("", [Validators.required]),
-    name : new FormControl("",[Validators.required]),
-    revive : new FormControl("",[Validators.required])
-  })
-
-  createBlock(){
-    const comment = { 
-      id:0,
-      img: this.contentForm.value.img,
-      stars: this.contentForm.value.stars,
-      name: this.contentForm.value.name,
-      revive: this.contentForm.value.revive
-    };
-
-    console.log(comment);
-
-    this.contentService.createBlock(comment).subscribe(data=>{
-      this.router.navigate(['/comment'])
-    });
-  
-  }
-  
 
   title = 'Star Rating';
   starList: boolean[] = [true, true, true, true, true];

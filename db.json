@@ -1,53 +1,40 @@
 {
-    "comment" : [
-        {
-            "img" : "assets/images/user1.jpg",
-            "stars" : {
-                "starOne" : true,
-                "starTwo" : true,
-                "starTree" : true,
-                "starFour" : true,
-                "starFive" : true
-            },
-            "name" : "James Anderson",
-            "revive" : "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in. Very well built theme, couldn't be happier with it. Can't wait for future updates to see what."
-        },
-        {
-            "img" : "assets/images/user2.jpg",
-            "stars" : {
-                "starOne" : true,
-                "starTwo" : true,
-                "starTree" : true,
-                "starFour" : true,
-                "starFive" : true
-            },
-            "name" : "Sarah Taylor",
-            "revive" : "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it."
-        },
-        {
-            "img" : "assets/images/user3.jpg",
-            "stars" : {
-                "starOne" : true,
-                "starTwo" : true,
-                "starTree" : true,
-                "starFour" : true,
-                "starFive" : true
-            },
-            "name" : "David Warner",
-            "revive" : "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it."
-        },
-        {
-            "img" : "assets/images/user4.jpg",
-            "stars" : {
-                "starOne" : true,
-                "starTwo" : true,
-                "starTree" : true,
-                "starFour" : true,
-                "starFive" : true
-            },
-            "name" : "King Kong",
-            "revive" : "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it."
-        }
-
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "firstName": "Ayşe",
+      "lastName": "yılmaz",
+      "email": "ayşe@gmail.com",
+      "mobile": "457984"
+    },
+    {
+      "id": 3,
+      "firstName": "özgü",
+      "lastName": "özgür",
+      "email": "özgü@gmail.com",
+      "mobile": "23324245"
+    },
+    {
+      "id": 4,
+      "firstName": "kerem",
+      "lastName": "keza",
+      "email": "kerem@gmail.com",
+      "mobile": "1312432"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

@@ -106,14 +106,14 @@
             <div class="commentSec">
               <h3>Add a review</h3>
               <p>Your email address will not be published. Required fields are marked<span> *</span></p>
-              <form [formGroup]="contentForm" (ngSubmit)="createBlock()">
+              <form>
                 <div class="row">
                   <div class="col-md-12"><span *ngFor="let star of stars; let i = index" (click)="rate(i + 1)">
                     <ng-container *ngIf="star; else noStar"><span class="fa fa-star checked"></span></ng-container>
                     <ng-template #noStar><span class="fa fa-star unchecked"></span></ng-template>
                   </span>
                   </div>
-                  <div class="col-md-6"><input type="text" placeholder="Name *" name="title" formControlName="title" /></div>
+                  <div class="col-md-6"><input type="text" placeholder="Name *"></div>
                   <div class="col-md-6"><input  type="text" placeholder="Email *" /></div>
                   <div class="col-md-12"><textarea name="" id="" cols="30" rows="10" placeholder="Your review"></textarea></div>
                   <div class="col-md-12"><input class="chackboxSet" type="checkbox">
